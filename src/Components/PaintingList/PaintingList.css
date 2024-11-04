@@ -1,0 +1,61 @@
+/* src/components/PaintingList.css */
+
+.painting-list {
+    display: flex;                   /* Utiliser flexbox */
+    flex-wrap: wrap;                /* Permettre au contenu de s'enrouler */
+    justify-content: center;         /* Espacement égal entre les items */
+    padding: 20px;                  /* Espacement intérieur */
+    gap: 20px;                      /* Espace entre les items */
+}
+
+.painting-item {
+    background-color: #fff;         /* Couleur de fond blanche pour chaque peinture */
+    border: 1px solid #e0e0e0;      /* Bordure légère autour de chaque item */
+    border-radius: 8px;             /* Coins arrondis */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    padding: 15px;                  /* Espacement intérieur */
+    flex: 1 1 calc(25% - 20px);     /* Ajustement de la largeur (4 éléments par ligne avec espacement) */
+    max-width: calc(25% - 20px);    /* Largeur maximale pour éviter le débordement */
+    transition: transform 0.3s;     /* Animation lors de l'agrandissement */
+}
+
+.painting-item:hover {
+    transform: translateY(-5px);     /* Effet de levée au survol */
+}
+
+.painting-image {
+    width: 100%;                     /* Prendre toute la largeur du conteneur */
+    height: 200px;                   /* Hauteur fixe pour uniformiser l'affichage */
+    object-fit: cover;               /* Ajuste l'image pour couvrir le conteneur tout en conservant les proportions */
+    border-radius: 5px;             /* Coins arrondis pour l'image */
+}
+
+.painting-title {
+    font-size: 18px;                 /* Taille du titre */
+    margin: 10px 0 5px;             /* Marges autour du titre */
+}
+
+.painting-artist {
+    color: #9a9abc;                  /* Couleur secondaire pour l'artiste */
+    margin: 5px 0;                  /* Marges autour du nom de l'artiste */
+}
+
+.painting-price {
+    font-size: 16px;                 /* Taille du prix */
+    color: #2e2e38;                  /* Couleur principale pour le prix */
+    margin: 5px 0;                  /* Marges autour du prix */
+}
+
+.add-to-cart {
+    background-color: #ff8474;       /* Couleur d'accent pour le bouton */
+    color: white;                    /* Couleur du texte en blanc */
+    border: none;                    /* Pas de bordure */
+    border-radius: 5px;             /* Coins arrondis */
+    padding: 10px;                  /* Espacement intérieur */
+    cursor: pointer;                 /* Curseur en forme de main */
+    transition: background-color 0.3s; /* Transition pour le changement de couleur */
+}
+
+.add-to-cart:hover {
+    background-color: #e67363;       /* Couleur d'accent au survol */
+}

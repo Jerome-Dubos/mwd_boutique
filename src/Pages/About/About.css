@@ -1,73 +1,66 @@
-/* AboutPage.css */
+/* src/components/About.css */
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Police moderne */
+}
 
 .about {
-    padding: 40px;
-    max-width: 800px;
-    margin: auto;
-    color: var(--text-color);
-}
-
-.about h2 {
-    font-size: 28px;
-    color: var(--main-color);
-}
-
-.about p {
-    line-height: 1.6;
-    margin: 10px 0;
-}
-
-.contact-info {
-    background-color: var(--secondary-color);
-    color: var(--text-color);
     padding: 20px;
-    border-radius: 8px;
-    margin-top: 20px;
+    background-color: #f1f1f4; /* Couleur d'arrière-plan clair */
 }
 
-/* Section de contact */
-.contact-section {
-    margin-top: 40px;
-    padding-top: 20px;
-    border-top: 1px solid var(--secondary-color);
+h1 {
+    font-size: 2.5em; /* Taille du titre principal */
+    color: #2e2e38; /* Couleur de texte principale */
+    margin-bottom: 20px; /* Espacement inférieur */
+    text-align: center; /* Centrer le titre */
 }
 
-.contact-section h3 {
-    color: var(--main-color);
-    margin-bottom: 20px;
+h2 {
+    font-size: 2em; /* Taille du sous-titre */
+    color: #4a4a75; /* Couleur principale */
+    margin-top: 30px; /* Espacement supérieur */
 }
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Grille responsive */
+    gap: 20px; /* Espacement entre les images */
 }
 
-.contact-form label {
-    margin-top: 10px;
-    font-weight: bold;
-    color: var(--text-color);
+.gallery-item {
+    background-color: #fff; /* Fond blanc pour chaque image */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    overflow: hidden; /* Pour les coins arrondis */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition pour l'animation */
 }
 
-.contact-form input,
-.contact-form textarea {
-    margin-top: 5px;
-    padding: 10px;
-    border: 1px solid var(--secondary-color);
-    border-radius: 5px;
-    font-size: 16px;
+.gallery-item:hover {
+    transform: translateY(-5px); /* Léger effet de survol */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Ombre plus marquée au survol */
 }
 
-.contact-form button {
-    margin-top: 20px;
-    align-self: center;
-    background-color: var(--accent-color);
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
+.gallery-image {
+    width: 100%; /* Prend toute la largeur du conteneur */
+    height: 200px; /* Hauteur fixe pour toutes les images */
+    object-fit: cover; /* Ajuste l'image pour couvrir le conteneur tout en conservant les proportions */
 }
 
-.contact-form button:hover {
-    background-color: #ff6a5c;
+.gallery-title {
+    font-size: 1.5em; /* Taille du titre de l'œuvre */
+    color: #2e2e38; /* Couleur de texte principale */
+    margin: 10px 0; /* Espacement autour du titre */
+}
+
+.gallery-artist {
+    font-size: 1.1em; /* Taille du texte pour l'artiste */
+    color: #9a9abc; /* Couleur secondaire */
+    margin: 5px 0; /* Espacement autour du nom de l'artiste */
+}
+
+.gallery-status {
+    font-size: 1em; /* Taille du texte pour le statut */
+    color: #ff8474; /* Couleur d'accent pour le statut */
+    margin-top: 5px; /* Espacement supérieur */
 }

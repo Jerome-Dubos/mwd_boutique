@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "title": "Impression, Soleil Levant",
+        "artist": "Claude Monet",
+        "price": 1500,
+        "available": true,
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Claude_Monet%2C_Impression%2C_soleil_levant.jpg/1200px-Claude_Monet%2C_Impression%2C_soleil_levant.jpg"
+    },
+    {
+        "id": 2,
+        "title": "La Nuit étoilée",
+        "artist": "Vincent van Gogh",
+        "price": 3000,
+        "available": true,
+        "imageUrl": "https://www.vangoghgallery.com/img/starry_night_full.jpg"
+    },
+    {
+        "id": 3,
+        "title": "La Danse",
+        "artist": "Henri Matisse",
+        "price": 2500,
+        "available": false,
+        "imageUrl": "https://i0.wp.com/arthive.com/res/media/img/oy800/work/b74/449397.jpg?resize=644%2C430&ssl=1"
+    },
+    {
+        "id": 4,
+        "title": "La Jeune Fille à la Perle",
+        "artist": "Johannes Vermeer",
+        "price": 3500,
+        "available": true,
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/1665_Girl_with_a_Pearl_Earring.jpg/1200px-1665_Girl_with_a_Pearl_Earring.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Le Cri",
+        "artist": "Edvard Munch",
+        "price": 4000,
+        "available": true,
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg/1200px-Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Les Nymphéas",
+        "artist": "Claude Monet",
+        "price": 4500,
+        "available": false,
+        "imageUrl": "https://cdn.mediatheque.epmoo.fr/link/3c9igq/cun1arcnyfzrn1c.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Composition VII",
+        "artist": "Wassily Kandinsky",
+        "price": 5000,
+        "available": true,
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Vassily_Kandinsky%2C_1913_-_Composition_7.jpg"
+    },
+    {
+        "id": 8,
+        "title": "La Persistance de la mémoire",
+        "artist": "Salvador Dalí",
+        "price": 6000,
+        "available": true,
+        "imageUrl": "https://www.salvador-dali.org/media/upload/cataleg_pintura/MITJA/0265.jpg"
+    }
+]

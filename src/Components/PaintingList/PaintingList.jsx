@@ -1,31 +1,29 @@
 // src/components/PaintingList.js
 import React from 'react';
 import { useCart } from '../../context/CartContext';
-
-const paintings = [
-  { id: 1, title: 'Tableau 1', price: 100 },
-  { id: 2, title: 'Tableau 2', price: 150 },
-  // Ajoutez d'autres tableaux ici
-];
+import paintingsData from '../../data/Artworks.json'; // Assurez-vous que ce chemin est correct
+import './PaintingList.css';
 
 const PaintingList = () => {
-  const { addToCart } = useCart();
+  const { addToCart } = useCart(); // Récupération de la fonction addToCart du contexte
+
+  // Filtrer les œuvres disponibles
+  const availablePaintings = paintingsData.filter(painting => painting.available);
 
   return (
-    <div>
-      <h2>Nos Tableaux</h2>
-      <ul>
-        {paintings.map((painting) => (
-          <li key={painting.id}>
-            <div>
-              <h3>{painting.title}</h3>
-              <p>Prix: ${painting.price}</p>
-              <button onClick={() => addToCart(painting)}>Ajouter au panier</button>
-            </div>
-          </li>
-        ))}
-      </ul>
-    </div>
+      <div className="painting-list">
+          {availablePaintings.map((painting) => (
+              <div key={painting.id} className="painting-item">
+                  <img src={painting.imageUrl} alt={painting.title} className="painting-image" />
+                  <h3 className="painting-title">{painting.title}</h3>
+                  <p className="painting-artist">Artiste : {painting.artist}</p>
+                  <p className="painting-price">Prix : {painting.price}€</p>
+                  <button className="add-to-cart" onClick={() => addToCart(painting)}>
+                      Ajouter au panier
+                  </button>
+              </div>
+          ))}
+      </div>
   );
 };
 

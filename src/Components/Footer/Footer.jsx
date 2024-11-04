@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer-content">
-                <h3 className="footer-title">Galerie d'Art</h3>
+                <h3 className="footer-title">MWD Boutique</h3>
                 <p>Adresse : 123 Rue de l'Art, Paris</p>
                 <p>Téléphone : +33 1 23 45 67 89</p>
                 <p>
