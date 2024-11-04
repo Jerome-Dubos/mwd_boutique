@@ -1,0 +1,73 @@
+/* AboutPage.css */
+
+.about {
+    padding: 40px;
+    max-width: 800px;
+    margin: auto;
+    color: var(--text-color);
+}
+
+.about h2 {
+    font-size: 28px;
+    color: var(--main-color);
+}
+
+.about p {
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.contact-info {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Section de contact */
+.contact-section {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--secondary-color);
+}
+
+.contact-section h3 {
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    margin-top: 20px;
+    align-self: center;
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #ff6a5c;
+}

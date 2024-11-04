@@ -1,0 +1,52 @@
+nav {
+    padding: 0 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    padding: 20px;
+ }
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #2e2e38;
+    font-size: 24px;
+    white-space: nowrap;
+    width: 100%;
+  }
+  a:hover {
+    color: #9a9abc;
+  }
+
+  .active {
+    color: #9a9abc;
+  }
+
+  @media screen and (max-width: 768px) {
+    nav {
+        padding: 0 25px;
+    }
+    ul {
+        flex-wrap: nowrap;
+        gap: 26px;
+    }      
+    a {
+        font-size: 12px;
+      }
+    img {
+        width: 145px;
+    } 
+  }

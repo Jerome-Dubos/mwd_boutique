@@ -1,18 +1,28 @@
 // src/components/Header.js
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import logo from '../../Images/Logo.png'
+import './Header.css'
 
-const Header = () => {
+function Header() {
   return (
-    <header>
-      <h1>Galerie d'Art</h1>
-      <nav>
-        <Link to="/">Accueil</Link>
-        <Link to="/about">À Propos</Link>
-        <Link to="/cart">Panier</Link>
-      </nav>
-    </header>
-  );
-};
+    <nav>
+      <div>
+        <img src={logo} alt="Logo MWD Boutique" />
+      </div>
+      <ul>
+        <NavLink to="/" activeclassname="active">
+          Accueil
+        </NavLink>
+        <NavLink to="/about" activeclassname="active">
+          A Propos
+        </NavLink>
+        <NavLink to="/cart" activeclassname="active">
+          Panier
+        </NavLink>
+      </ul>
+    </nav>
+  )
+}
 
-export default Header;
+export default Header

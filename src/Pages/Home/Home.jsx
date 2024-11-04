@@ -1,5 +1,6 @@
 import React from 'react';
 import PaintingList from '../../Components/PaintingList/PaintingList';
+import './Home.css';
 
 const Home = () => {
   return (

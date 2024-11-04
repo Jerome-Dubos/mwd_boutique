@@ -1,0 +1,36 @@
+/* Palette de couleurs */
+:root {
+  --main-color: #4a4a75;
+  --secondary-color: #9a9abc;
+  --accent-color: #ff8474;
+  --background-light: #f1f1f4;
+  --text-color: #2e2e38;
+  --footer-color: #3a3a56;
+}
+
+/* Styles globaux */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-light);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  color: var(--main-color);
+}
+
+button {
+  background-color: var(--accent-color);
+  color: #f1f1f4;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ff6a5c;
+}
