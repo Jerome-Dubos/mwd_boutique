@@ -1,0 +1,120 @@
+/* Styles globaux */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9; /* Couleur de fond légère */
+  color: #333; /* Couleur du texte */
+}
+
+header {
+  background-color: #e6e6fa; /* Violet clair */
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  color: #6a5acd; /* Violet plus foncé pour le titre */
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  color: #6a5acd; /* Couleur des liens */
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+nav a:hover {
+  text-decoration: underline; /* Souligner les liens au survol */
+}
+
+h2 {
+  color: #6a5acd; /* Titre des sections */
+  text-align: center;
+}
+
+ul {
+  list-style-type: none; /* Retirer les puces */
+  padding: 0;
+}
+
+li {
+  background-color: #ffffff; /* Fond blanc pour les éléments de la liste */
+  margin: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre pour les éléments */
+  transition: transform 0.2s; /* Effet de transition */
+}
+
+li:hover {
+  transform: scale(1.02); /* Effet d'agrandissement au survol */
+}
+
+/* Styles spécifiques au panier */
+.cart {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart h2 {
+  margin-top: 0;
+}
+
+.cart ul {
+  margin: 0;
+  padding: 0;
+}
+
+.cart li {
+  display: flex;
+  justify-content: space-between; /* Espacement entre le titre et le bouton */
+  align-items: center; /* Centrer verticalement le contenu */
+}
+
+.cart button {
+  background-color: #ff6347; /* Couleur du bouton de suppression */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Effet de transition pour le bouton */
+}
+
+.cart button:hover {
+  background-color: #ff4500; /* Couleur plus foncée au survol */
+}
+
+footer {
+  background-color: #e6e6fa; /* Violet clair */
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav a {
+      margin: 5px 0;
+  }
+
+  li {
+      flex-direction: column; /* Empiler le contenu dans les petits écrans */
+      align-items: flex-start; /* Alignement à gauche */
+  }
+}
